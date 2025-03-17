@@ -3,10 +3,12 @@ package main
 import "fmt"
 
 func main() {
+	const format = "%v x %v = %v\n"
+
 	for i := range 11 {
 		table := 2
 		total := table * i
-		fmt.Printf("%v x %v = %v\n", table, i, total)
+		fmt.Printf(format, table, i, total)
 	}
 
 	fmt.Println("")
@@ -14,7 +16,7 @@ func main() {
 	for i := 1; i < 11; i++ {
 		table := 3
 		total := table * i
-		fmt.Printf("%v x %v = %v\n", table, i, total)
+		fmt.Printf(format, table, i, total)
 	}
 
 	fmt.Println("")
@@ -22,7 +24,7 @@ func main() {
 	for i < 11 {
 		table := 4
 		total := table * i
-		fmt.Printf("%v x %v = %v\n", table, i, total)
+		fmt.Printf(format, table, i, total)
 		i++
 	}
 }
